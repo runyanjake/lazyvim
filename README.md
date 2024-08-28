@@ -31,4 +31,14 @@ ln -sfn /path/to/original/init.lua ~/.config/nvim/init.lua
 ```
 4. Start nvim, and let all the packages install. Done!
 
+## Plugins/Addons
+
+### Mason (Language Servers)
+Enter Mason UI view from nvim: `:Mason`. Enter `g?` to toggle help page if you've forgotten the hotkeys. 
+Some ideas of what to install:
+- `java-language-server`
+- `python-lsp-server`
+
+## Shortcut Reference
+
 
