@@ -15,7 +15,7 @@ gh repo clone runyanjake/lazyvim  ~/.config/nvim
 3. Start nvim, and let all the packages install. Done!
 
 If cloning repo to a seperate location:
-1. 1. Back up existing nvim config
+1. Back up existing nvim config
 ```
 mv ~/.config/nvim ~/.config/nvim_BAK
 ```
