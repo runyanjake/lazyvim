@@ -26,7 +26,6 @@ gh repo clone runyanjake/lazyvim  ~/repositories/lazyvim
 3. Link all nvim related items to the nvim config folder.
 ```
 ln -sfn /path/to/original/stylua.toml ~/.config/nvim/stylua.toml
-ln -sfn /path/to/original/README.md ~/.config/nvim/README.md
 ln -sfn /path/to/original/lua ~/.config/nvim/lua
 ln -sfn /path/to/original/init.lua ~/.config/nvim/init.lua
 ```
