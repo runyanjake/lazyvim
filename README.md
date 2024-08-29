@@ -35,7 +35,7 @@ brew install font-meslo-lg-nerd-font
 3. Create an Alacritty config folder and link the alacritty config in this repo into there.
 ```
 mkdir -p ~/.config/alacritty
-ln -sfn /Users/runyanjake/Desktop/repositories/lazyvim/alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -sfn /Users/runyanjake/Desktop/repositories/lazyvim/alacritty-macos.toml ~/.config/alacritty/alacritty.toml
 ```
 
 #### Ubuntu
@@ -52,8 +52,8 @@ sudo apt install fonts-firacode
 3. Create an Alacritty config folder and link the alacritty config in this repo into there.
 ```
 mkdir -p ~/.config/alacritty
-ln -sfn /home/jrunyan/repos/lazyvim/alacritty.toml ~/.config/alacritty/alacritty.toml
-``` 
+ln -sfn /home/jrunyan/repos/lazyvim/alacritty-ubuntu.toml ~/.config/alacritty/alacritty.toml
+```
 
 ## Plugins/Addons
 
