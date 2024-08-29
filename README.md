@@ -5,18 +5,6 @@ Based off of `https://github.com/LazyVim/starter`.
 ## Installation
 
 ### Server
-If cloning repo directly to `~/.config/nvim`:
-1. Back up existing nvim config
-```
-mv ~/.config/nvim ~/.config/nvim_BAK
-```
-2. Clone this repo into a new nvim config folder.
-```
-gh repo clone runyanjake/lazyvim  ~/.config/nvim
-```
-3. Start nvim, and let all the packages install. Done!
-
-If cloning repo to a seperate location:
 1. Back up existing nvim config
 ```
 mv ~/.config/nvim ~/.config/nvim_BAK
@@ -34,7 +22,7 @@ ln -sfn /path/to/original/init.lua ~/.config/nvim/init.lua
 4. Start nvim, and let all the packages install. Done!
 
 ### Client
-**This example is installing Alacritty on MacOS**
+(This example is installing Alacritty on MacOS)
 1. For MacOS you can download a release from `https://github.com/alacritty/alacritty/releases` or get it using Homebrew
 ```
 brew install --cask alacritty
@@ -43,31 +31,11 @@ brew install --cask alacritty
 ```
 brew install font-meslo-lg-nerd-font
 ```
-3. Create an Alacritty config:
+3. Create an Alacritty config folder and link the alacritty config in this repo into there.
 ```
 mkdir -p ~/.config/alacritty
-touch ~/.config/alacritty/alacritty.toml
+ln -sfn /Users/runyanjake/Desktop/repositories/lazyvim/alacritty.toml ~/.config/alacritty/alacritty.toml
 ```
-and into that config add
-```
-[env]
-TERM = "xterm-256color"
-
-[window]
-padding.x = 10
-padding.y = 10
-
-opacity = 0.7
-blur = true
-
-option_as_alt = "Both"
-
-[font]
-normal.family = "MesloLGS Nerd Font Mono"
-
-size = 14
-```
-
 
 ## Plugins/Addons
 
