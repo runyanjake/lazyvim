@@ -2,7 +2,9 @@
 My LazyVim config, a sequel to runyanjake/nvim.  
 Based off of `https://github.com/LazyVim/starter`.
 
-## Install
+## Installation
+
+### Server
 If cloning repo directly to `~/.config/nvim`:
 1. Back up existing nvim config
 ```
@@ -30,6 +32,42 @@ ln -sfn /path/to/original/lua ~/.config/nvim/lua
 ln -sfn /path/to/original/init.lua ~/.config/nvim/init.lua
 ```
 4. Start nvim, and let all the packages install. Done!
+
+### Client
+**This example is installing Alacritty on MacOS**
+1. For MacOS you can download a release from `https://github.com/alacritty/alacritty/releases` or get it using Homebrew
+```
+brew install --cask alacritty
+```
+2. Install a nerd font. This is just some one suggested online.
+```
+brew install font-meslo-lg-nerd-font
+```
+3. Create an Alacritty config:
+```
+mkdir -p ~/.config/alacritty
+touch ~/.config/alacritty/alacritty.toml
+```
+and into that config add
+```
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 10
+padding.y = 10
+
+opacity = 0.7
+blur = true
+
+option_as_alt = "Both"
+
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+
+size = 14
+```
+
 
 ## Plugins/Addons
 
