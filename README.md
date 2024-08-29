@@ -45,9 +45,13 @@ sudo add-apt-repository ppa:aslatter/ppa
 sudo apt update
 sudo apt install alacritty
 ```
-2. Install a nerd font (on Ubuntu we're using a patched font)
+2. Install a nerd font (I am using "MesloLG Nerd Font" from  `https://www.nerdfonts.com/font-downloads`)
 ```
-sudo apt install fonts-firacode
+unzip Meslo.zip -d Meslo
+mkdir ~/.local/share/fonts
+cp Meslo/*.ttf ~/.local/share/fonts
+fc-cache -fv
+rm -r Meslo Meslo.zip
 ```
 3. Create an Alacritty config folder and link the alacritty config in this repo into there.
 ```
