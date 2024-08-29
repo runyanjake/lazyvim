@@ -22,8 +22,9 @@ ln -sfn /path/to/original/init.lua ~/.config/nvim/init.lua
 4. Start nvim, and let all the packages install. Done!
 
 ### Client
-(This example is installing Alacritty on MacOS)
-1. For MacOS you can download a release from `https://github.com/alacritty/alacritty/releases` or get it using Homebrew
+
+#### MacOS
+1. Download a release from `https://github.com/alacritty/alacritty/releases` or get it using Homebrew
 ```
 brew install --cask alacritty
 ```
@@ -36,6 +37,23 @@ brew install font-meslo-lg-nerd-font
 mkdir -p ~/.config/alacritty
 ln -sfn /Users/runyanjake/Desktop/repositories/lazyvim/alacritty.toml ~/.config/alacritty/alacritty.toml
 ```
+
+#### Ubuntu
+1. Install Alacritty through a third-party PPA.
+```
+sudo add-apt-repository ppa:aslatter/ppa
+sudo apt update
+sudo apt install alacritty
+```
+2. Install a nerd font (on Ubuntu we're using a patched font)
+```
+sudo apt install fonts-firacode
+```
+3. Create an Alacritty config folder and link the alacritty config in this repo into there.
+```
+mkdir -p ~/.config/alacritty
+ln -sfn /home/jrunyan/repos/lazyvim/alacritty.toml ~/.config/alacritty/alacritty.toml
+``` 
 
 ## Plugins/Addons
 
