@@ -78,5 +78,5 @@ Some ideas of what to install:
 - `python-lsp-server`
 
 ## Shortcut Reference
-
+`<LEADER>` key is space by default. I don't see a need to change it for me.
 
